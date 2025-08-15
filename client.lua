@@ -4,16 +4,24 @@ Citizen.CreateThread(function()
     local ejectDir = vector3(1.0, 0.0, 0.5) 
     local rotVector = vector3(0.0, 90.0, 0.0) 
 
-    local pistols = {
-        GetHashKey("WEAPON_PISTOL"),
-        GetHashKey("WEAPON_PISTOL_MK2"),
-        GetHashKey("WEAPON_COMBATPISTOL"),
-        GetHashKey("WEAPON_APPISTOL"),
-        GetHashKey("WEAPON_PISTOL50"),
-        GetHashKey("WEAPON_SNSPISTOL"),
-        GetHashKey("WEAPON_HEAVYPISTOL"),
-        GetHashKey("WEAPON_VINTAGEPISTOL"),
-    }
+local pistols = {
+    GetHashKey("WEAPON_PISTOL"),
+    GetHashKey("WEAPON_PISTOL_MK2"),
+    GetHashKey("WEAPON_COMBATPISTOL"),
+    GetHashKey("WEAPON_APPISTOL"),
+    GetHashKey("WEAPON_PISTOL50"),
+    GetHashKey("WEAPON_SNSPISTOL"),
+    GetHashKey("WEAPON_SNSPISTOL_MK2"),
+    GetHashKey("WEAPON_HEAVYPISTOL"),
+    GetHashKey("WEAPON_VINTAGEPISTOL"),
+    GetHashKey("WEAPON_MARKSMANPISTOL"),
+    GetHashKey("WEAPON_REVOLVER"),
+    GetHashKey("WEAPON_REVOLVER_MK2"),
+    GetHashKey("WEAPON_DOUBLEACTION"),
+    GetHashKey("WEAPON_CERAMICPISTOL"),
+    GetHashKey("WEAPON_NAVYREVOLVER"),
+}
+
 
     RequestModel(shellModelHash)
     while not HasModelLoaded(shellModelHash) do
